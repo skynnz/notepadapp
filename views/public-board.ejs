@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablón Público</title>
+</head>
+<body>
+    <h1>Tablón Público</h1>
+    <a href="/dashboard">Volver al Dashboard</a>
+    <ul>
+        <% documents.forEach(document => { %>
+            <li>
+                <h3><%= document.title %></h3>
+                <p><%= document.content %></p>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
